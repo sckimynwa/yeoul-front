@@ -11,6 +11,8 @@ Design Guide with antd + custom library
 
 /about
 
+/lab
+
 #### nginx
 
 /coding
