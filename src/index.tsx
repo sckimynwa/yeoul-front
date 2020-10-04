@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
 import 'antd/dist/antd.css'
+import 'normalize.css';
+import './index.scss';
 import App from './App';
 
 ReactDOM.render(
