@@ -9,17 +9,20 @@ const NavigationBar: React.FC = () => (
             <img src={mainLogo} />
         </MainLogo>
         <Menu mode="horizontal">
+            <Menu.Item key="about">
+                About
+            </Menu.Item>
             <Menu.Item key="coding">
-                <a href="https://www.yeoulcoding.tistory.com">Coding.</a>
+                <a href="https://yeoulcoding.tistory.com">Coding.</a>
             </Menu.Item>
             <Menu.Item key="design">
-                <a href="https://www.yeouldesign.tistory.com">Design.</a>
+                <a href="https://yeouldesign.tistory.com">Design.</a>
             </Menu.Item>
             <Menu.Item key="writing">
-                <a href="https://www.yeoulwriting.tistory.com">Writing.</a>
+                <a href="https://yeoulwriting.tistory.com">Writing.</a>
             </Menu.Item>
             <Menu.Item key="economics">
-                <a href="https://www.yeouleconomist.tistory.com">Economy.</a>
+                <a href="https://yeouleconomist.tistory.com">Economy.</a>
             </Menu.Item>
         </Menu>
     </MenuWrapper>
