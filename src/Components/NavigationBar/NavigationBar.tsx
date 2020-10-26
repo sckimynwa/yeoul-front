@@ -12,6 +12,9 @@ const NavigationBar: React.FC = () => (
             <Menu.Item key="about">
                 About
             </Menu.Item>
+            <Menu.Item key="lab">
+                Lab.
+            </Menu.Item>
             <Menu.Item key="coding">
                 <a href="https://yeoulcoding.tistory.com">Coding.</a>
             </Menu.Item>
