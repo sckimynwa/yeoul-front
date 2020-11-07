@@ -6,7 +6,7 @@ import { MenuWrapper, MainLogo } from "./NavigationBar.style";
 const NavigationBar: React.FC = () => (
     <MenuWrapper>
         <MainLogo>
-            <img src={mainLogo} />
+            <img src={mainLogo} alt="mainLogo" />
         </MainLogo>
         <Menu mode="horizontal">
             <Menu.Item key="about">
