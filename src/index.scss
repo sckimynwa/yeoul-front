@@ -1,7 +1,4 @@
-/* 
-  Font와 Third-Party Imports에 대한 CSS Overriding을 정의한다.
-  Theme관련 속성은 Utils/GlobalStyles.ts에서 수정하도록 한다.
-*/
+@import '~normalize.css';
 
 @font-face {
   font-family: "Spoqa Han Sans";
