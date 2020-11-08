@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Helmet } from 'react-helmet';
 import NavigationBar from '../Components/NavigationBar';
-import useTheme from '../Utils/Hooks/useTheme';
+import { ThemeContext } from '../Utils/Contexts/ThemeContext';
 import { MainContent, MainFooter, MainHeader, MainLayout } from './App.style';
 
 const App: React.FC = () => {
-    const [theme, setTheme] = useTheme(); // useContext로 변경
+    const [theme] = useContext(ThemeContext);
 
     return (<>
         <Helmet>
@@ -16,7 +16,7 @@ const App: React.FC = () => {
         </Helmet>
         <MainLayout>
             <MainHeader theme={theme}>
-                <NavigationBar theme={theme} setTheme={setTheme} />
+                <NavigationBar />
             </MainHeader>
             <MainContent></MainContent>
             <MainFooter>NormalCoder ©2020 Created by Yeoul.</MainFooter>

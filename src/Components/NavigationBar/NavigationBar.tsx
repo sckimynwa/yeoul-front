@@ -1,15 +1,13 @@
 import { Menu, Switch } from "antd";
-import React from "react";
+import React, { useContext } from "react";
 import mainLogo from "../../_assets/images/main_logo.jpeg";
 import mainLogoDark from "../../_assets/images/main_logo_dark.jpeg";
 import { MainLogo, MenuWrapper, MainMenu } from "./NavigationBar.style";
+import { ThemeContext } from "../../Utils/Contexts/ThemeContext";
 
-interface IProps {
-    theme: string;
-    setTheme: () => void;
-}
 
-const NavigationBar: React.FC<IProps> = ({ theme, setTheme }) => {
+const NavigationBar: React.FC = () => {
+    const [theme, toggleTheme] = useContext(ThemeContext);
 
     return (
         <MenuWrapper>
@@ -35,7 +33,7 @@ const NavigationBar: React.FC<IProps> = ({ theme, setTheme }) => {
                 <Menu.Item key="economics">
                     <a href="https://yeouleconomist.tistory.com">Economy</a>
                 </Menu.Item>
-                <Switch onChange={setTheme} />
+                <Switch onChange={toggleTheme} />
             </MainMenu>
         </MenuWrapper>)
 }
