@@ -10,14 +10,9 @@ export const MainHeader = styled(Header)`
     position: fixed;
     z-index: 1000;
     width: 100%;
-    height: 70px !important;
-    ${(props) => props.theme === 'light' && `
-        background: white !important;
-    `}
-
-    ${(props) => props.theme === 'dark' && `
-        background: #141414 !important;
-    `}`;
+    height: 70px;
+    background: ${props => props.theme === 'light' && 'white !important'}
+`;
 
 export const MainContent = styled(Content)`
 `;
